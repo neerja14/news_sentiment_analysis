@@ -1,0 +1,10 @@
+flask
+pandas
+textblob
+mysql-connector-python
+pymysql
+PyMySQL[rsa]
+cryptography
+requests
+SQLAlchemy
+langdetect

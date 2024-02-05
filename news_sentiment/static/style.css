@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    color: black;
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+}
+
+.header-text {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.header-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header-text h2 {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.content {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    display: inline-block;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    width: 30%;
+    height: 400px;
+}
+#newsForm{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.form-group {
+    margin-bottom: 40px;
+
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="date"] {
+    width: 180px;
+    padding: 10px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.sentiments-box {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.checkbox-group label {
+    margin-right: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*  -------------------------------------------  */
+.nav-image{
+    width:100%
+}

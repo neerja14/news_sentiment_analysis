@@ -1,0 +1,29 @@
+name: Docker Build and Push
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Login to Docker Hub
+      run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+
+    - name: Build and Push Python App Image
+      run: |
+        docker build -t neerjatiwari918/python-app .
+        docker tag neerjatiwari918/python-app:latest neerjatiwari918/python-app:latest
+        docker push neerjatiwari918/python-app:latest
+
+    - name: Build and Push MySQL Image
+      run: |
+        docker build -t neerjatiwari918/python-mysql .
+        docker tag neerjatiwari918/python-mysql:latest neerjatiwari918/python-mysql:latest
+        docker push neerjatiwari918/python-mysql:latest

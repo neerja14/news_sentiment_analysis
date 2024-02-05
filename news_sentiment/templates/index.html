@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Analysis</title>
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="nav-image">
+            <img src="../static/header-image.jpg" alt="India-Maldives Relations" class="header-image">
+        </nav>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>THE MALDIVES' TUG OF WAR OVER INDIA</h1>
+                <h2>Lets explore the NewsAnalysis</h2>
+
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="form-container">
+            <!-- action="/getData" -->
+            <form id="newsForm" method="POST"  action="/get_news">
+                <div class="form-group">
+                    <label for="date_from">FROM:</label>
+                    <input type="date" id="date_from" name="date_from">
+                    <label for="date_to">TO:</label>
+                    <input type="date" id="date_too" name="date_too">
+                </div>
+                <div class="form-group">
+                    <label>SENTIMENTS:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="sentiment" value="Positive"> Positive</label>
+                        <label><input type="checkbox" name="sentiment" value="Negative"> Negative</label>
+                        <label><input type="checkbox" name="sentiment" value="Neutral"> Neutral</label>
+                    </div>
+                </div>
+                <button type="submit" id="form_submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- <script src="../static/script.js"></script> -->
+</body>
+</html>
